@@ -4,6 +4,27 @@ This repository contains reusable GitHub Copilot instructions and prompt templat
 
 The main purpose of this repository is to help GitHub Copilot generate more consistent, complete, and project-aware QA outputs such as checklists, requirement analyses, bug reports, and log reviews.
 
+## GitHub Copilot Setup
+
+This repository is already configured for GitHub Copilot through:
+
+- `.github/copilot-instructions.md`
+- `.github/instructions/checklist.instructions.md`
+- `.github/prompts/checklist.prompt.md`
+
+To use it:
+
+1. Open this repository in VS Code, Visual Studio, or GitHub.
+2. Make sure GitHub Copilot and Copilot Chat are enabled in your editor or account.
+3. Start Copilot Chat in this repository context.
+4. Paste a requirement and ask Copilot to follow the repository QA instructions.
+
+Example request:
+
+```text
+Generate a QA checklist for this requirement and follow the instructions in .github/copilot-instructions.md and .github/instructions/checklist.instructions.md.
+```
+
 ## Purpose
 
 This repository is designed to:
@@ -149,31 +170,6 @@ Bad example:
 Check stop message.
 ```
 
-## QA Domain Covered
-
-This repository is currently tailored for:
-
-- GPOS
-- GPOS Multi
-- TPOS
-- TPOS-AFD
-- FCS
-- Pump Simulator
-- NearPay
-- NAMI / MadaPOS
-- Vehicle Wallet
-- Dashboard
-- Pump authorization
-- Prepay and postpay
-- Basket handling
-- Completion
-- Refund
-- Void
-- Reversal
-- Timeout
-- Receipt generation
-- Arabic and English validation
-- Device Type variations such as AMP, CionTek, and Other
 
 ## Maintenance
 
